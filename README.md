@@ -6,9 +6,9 @@
 
 ## Table of Contents
 
-1. [Features] (# features)
-1. [Requirements] (# requirements)
-1. [Installation] (# installation)
+1. [Features](#features)
+1. [Requirements](#requirements)
+1. [Installation](#installation)
 
 
 
@@ -20,7 +20,7 @@ The module adds a website subpage to a Magento v.2 based store with a form that 
 
 
 * PHP version compatible with the requirements of the installed version of Magento 2
-* PHP extensions: [cURL] [ext2] and [hash] [ext3].
+* PHP extensions: [cURL][ext2] and [hash][ext3].
 
 ## Installation
 
@@ -28,7 +28,7 @@ The module adds a website subpage to a Magento v.2 based store with a form that 
 `composer require kansoft/module-currency-converter`
 
 #### Copying files to the server
- 1. Download the latest version of the module from [GitHub repository] [ext1]
+ 1. Download the latest version of the module from [GitHub repository][ext1]
  1. Unpack the downloaded file
  1. Connect to the ftp server and copy the unpacked content to the 'app/code/Kansoft/CurrConverter` directory of your Magento 2. If there is no such directory, create it.
  
