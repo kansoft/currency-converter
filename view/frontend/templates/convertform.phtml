@@ -1,0 +1,45 @@
+
+<form class="form"
+      action="<?php /* @escapeNotVerified */ echo $block->getFormAction(); ?>"
+      id="curr-form"
+      method="post"
+      data-hasrequired="<?php /* @escapeNotVerified */ echo __('* Required Fields') ?>"
+>
+    <fieldset class="fieldset">
+        <legend class="legend"><span><?php /* @escapeNotVerified */ echo __('Converter') ?></span></legend><br />
+
+        <div class="field required">
+            <label class="label" for="rub"><span><?php /* @escapeNotVerified */ echo __('RUB') ?></span></label>
+            <div class="control">
+                <input name="rub" id="rub" title="<?php /* @escapeNotVerified */ echo __('RUB') ?>" value="" class="input-text" type="text" data-validate="{required:true, number:true}"/>
+            </div>
+        </div>
+        <div class="field hidden">
+            <label class="label" for="pln"><span><?php /* @escapeNotVerified */ echo __('PLN') ?></span></label>
+            <div class="control disabled">
+                <input name="pln" id="pln" title="<?php /* @escapeNotVerified */ echo __('PLN') ?>" value="" class="input-text disabled" disabled type="text" />
+            </div>
+        </div>
+
+    </fieldset>
+    <div class="actions-toolbar">
+        <div class="primary">
+            <input type="hidden" name="hideit" id="hideit" value="" />
+            <button type="submit" title="<?php /* @escapeNotVerified */ echo __('Convert') ?>" class="action submit primary">
+                <span><?php /* @escapeNotVerified */ echo __('Convert') ?></span>
+            </button>
+        </div>
+    </div>
+</form>
+<?php
+$ajaxurl = $block->getFormAction();
+?>
+<script type="text/x-magento-init">
+        {
+            "*": {
+                "Kansoft_CurrConverter/js/convertajax": {
+                    "AjaxUrl": "<?php echo $ajaxurl; ?>"
+                }
+            }
+        }
+</script>

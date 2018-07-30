@@ -1,0 +1,15 @@
+{
+  "name": "kansoft/module-currency-converter",
+  "description": "Convert One currency to another",
+  "version": "0.1.0",
+  "type": "magento2-module",
+
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Kansoft\\CurrConverter\\": ""
+    }
+  },
+}
