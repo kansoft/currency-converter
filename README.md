@@ -33,10 +33,10 @@ The module adds a website subpage to a Magento v.2 based store with a form that 
  1. Connect to the ftp server and copy the unpacked content to the 'app/code/Kansoft/CurrConverter` directory of your Magento 2. If there is no such directory, create it.
  
  After installation using Composer or copying files from the console, run:
-     * php bin/magento module:enable Kansoft_CurrConverter
-     * php bin/magento setup:upgrade
-     * php bin/magento setup:di:compile
-     * php bin/magento setup:static-content:deploy
+ * php bin/magento module:enable Kansoft_CurrConverter
+ * php bin/magento setup:upgrade
+ * php bin/magento setup:di:compile
+ * php bin/magento setup:static-content:deploy
 
 
 <!--external links:-->
