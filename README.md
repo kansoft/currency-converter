@@ -13,7 +13,7 @@
 
 
 ## Features
-The module adds a website subpage to a Magento v.2 based store with a form that allows you to convert a Ruble exchange rate into Polish zloty.
+The module adds a website subpage to a Magento v.2 based store with a form that allows you to convert a Ruble exchange rate into Polish zloty. The module uses an external API to get current exchange rate (http://api.nbp.pl/en.html).
 
 
 ## Requirements
