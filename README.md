@@ -38,7 +38,7 @@ The module adds a website subpage to a Magento v.2 based store with a form that 
  * php bin/magento setup:di:compile
  * php bin/magento setup:static-content:deploy
 
-**To see a page with converter form go to url <magento-base-url>/currconverter/**
+**To see a page with converter form go to url 'magento-base-url/currconverter/'**
 
 <!--external links:-->
 [ext1]: https://github.com/kansoft/currency-converter
