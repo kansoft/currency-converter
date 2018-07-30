@@ -3,7 +3,7 @@
   "description": "Convert One currency to another",
   "version": "0.1.0",
   "type": "magento2-module",
-  "minimum-stability":"stable",
+  "minimum-stability":"dev",
   "autoload": {
     "files": [
       "registration.php"
@@ -11,6 +11,9 @@
     "psr-4": {
       "Kansoft\\CurrConverter\\": ""
     }
+  },
+  "require": {
+    "kansoft/module-currency-converter": "dev-master"
   },
   "repositories": [
     {
