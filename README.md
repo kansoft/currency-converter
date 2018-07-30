@@ -1,43 +1,42 @@
-# Moduł CurrencyConverter
-``Moduł jest wydawany na licencji GPL.``
+# Module CurrencyConverter
+``The module is released under the GPL license.``
 
-**Jeżeli masz jakiekolwiek pytania lub chcesz zgłosić błąd zapraszamy do kontaktu z naszym wsparciem pod adresem: biuro@kansoft.pl.**
-
-
-## Spis treści
-
-1. [Cechy](#cechy)
-1. [Wymagania](#wymagania)
-1. [Instalacja](#instalacja)
+**If you have any questions or want to report a mistake, please contact our support at: biuro@kansoft.pl.**
 
 
+## Table of Contents
 
-## Cechy
-Moduł dodaje podstronę www na sklepie opartym o Magento v.2 z formularzem umożliwiającym przeliczenie kursy waluty Rubla na Polski złoty.
+1. [Features] (# features)
+1. [Requirements] (# requirements)
+1. [Installation] (# installation)
 
 
-## Wymagania
+
+## Features
+The module adds a website subpage to a Magento v.2 based store with a form that allows you to convert a Ruble exchange rate into Polish zloty.
 
 
-* Wersja PHP zgodna z wymaganiami zainstalowanej wersji Magento 2
-* Rozszerzenia PHP: [cURL][ext2] i [hash][ext3].
+## Requirements
 
-## Instalacja
 
-#### Przy użyciu Composer
+* PHP version compatible with the requirements of the installed version of Magento 2
+* PHP extensions: [cURL] [ext2] and [hash] [ext3].
+
+## Installation
+
+#### Using Composer
 `composer require kansoft/module-currency-converter`
 
-#### Kopiując pliki na serwer
-1. Pobierz najnowszą wersję moduł z [repozytorium GitHub][ext1]
-1. Rozpakuj pobrany plik
-1. Połącz się z serwerem ftp i skopiuj rozpakowaną zawartość do katalogu `app/code/Kansoft/CurrConverter` swojego sklepu Magento 2. Jeżeli nie ma takiego katalogu utwórz go.
-
-Po instalacji przy użyciu Composer lub kopiując pliki z poziomu konsoli uruchom:
-   * php bin/magento module:enable Kansoft_CurrConverter
-   * php bin/magento setup:upgrade
-   * php bin/magento setup:di:compile
-   * php bin/magento setup:static-content:deploy
-
+#### Copying files to the server
+ 1. Download the latest version of the module from [GitHub repository] [ext1]
+ 1. Unpack the downloaded file
+ 1. Connect to the ftp server and copy the unpacked content to the 'app/code/Kansoft/CurrConverter` directory of your Magento 2. If there is no such directory, create it.
+ 
+ After installation using Composer or copying files from the console, run:
+     * php bin/magento module:enable Kansoft_CurrConverter
+     * php bin/magento setup:upgrade
+     * php bin/magento setup:di:compile
+     * php bin/magento setup:static-content:deploy
 
 
 <!--external links:-->
