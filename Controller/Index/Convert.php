@@ -22,10 +22,12 @@ class Convert extends Action
      * @var JsonFactory
      */
     protected $_resultJsonFactory;
+
     /**
      * @var \Magento\Framework\Controller\Result\Json
      */
     protected $_resultJson;
+
     /**
      * @var ModuleConfig
      */
@@ -73,7 +75,7 @@ class Convert extends Action
                     $data['currency'] = (float)$requestData['rub'] * (float)$currentExchangeRate['rates'][0]['mid'];
                     $data['success'] = true;
                 }
-            }else{
+            } else {
                 $data['message'] = 'There is a problem with the current exchange rate.';
             }
 

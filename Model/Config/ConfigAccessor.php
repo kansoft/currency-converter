@@ -13,7 +13,7 @@ use Magento\Framework\App\Config\ScopeConfigInterface;
  * Class ConfigAccessor
  * @package Kansoft\CurrConverter\Model\Config
  */
-class ConfigAccessor
+class ConfigAccessor implements ConfigAccessorInterface
 {
     /**
      * @var ScopeConfigInterface
@@ -27,8 +27,7 @@ class ConfigAccessor
      */
     public function __construct(
         ScopeConfigInterface $scopeConfig
-    )
-    {
+    ) {
         $this->scopeConfig = $scopeConfig;
     }
 
